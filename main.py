@@ -1,4 +1,19 @@
-print("coucou")
+import wordies
+
+import random
+
+from bidules import machins
+
+import math
+
+
+print(random.randint(2, 7))
+
+print(machins.choses)
+
+machins.fais_un_truc()
+
+
 
 dauphin = "voila un dauphin"
 
@@ -38,13 +53,26 @@ def fais_des_pates():
 
 #print("ravioli")
 
-reponse = input("t'aimes le veau ?")
+# reponse = input("t'aimes le veau ?")
+#
+# print("ta réponse est :"+reponse)
 
-print("ta réponse est :"+reponse)
+#print("4"+4)
 
-print("4"+4)
+print(wordies.words)
 
-words = ["bouteille", "huile", "papier-toilette", "beurre"]
-#demander à l'utilisateur un nombre entre 1 et
-# choisir un mot dans le tableau et demander à l'user de le deviner
-#lui dire c'est bon ou pas
+
+question = input("tu veux la racine carrée de combien ?")
+
+nombre = int(question)
+
+try:
+    square_root = math.sqrt(nombre)
+    print("la racine carree est : ")
+    print(square_root)
+except ValueError:
+    print('donne moi un nombre positif, banane')
+finally:
+    print('et voila on a fini')
+
+
